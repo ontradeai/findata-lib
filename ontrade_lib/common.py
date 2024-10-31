@@ -1,4 +1,4 @@
-from database import get_db_connection
+from ontrade_lib.database import get_db_connection
 
 def sql_safe_string(text):
     return '"' + (text or '').replace("'", "''").replace('"', '\\"') + '"'
